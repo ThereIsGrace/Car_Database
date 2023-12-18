@@ -57,7 +57,6 @@ public class CardatabaseApplication implements CommandLineRunner{
 		
 		// 사용자 이름 : user, 암호 : user
 		urepository.save(new User("user", "$2a$10$JoxIoY0g5As.GPXcfj4xK.86WlHUaGWZ5PP4Foi9hgryI0/toxs86", "USER"));
-		
 		// 사용자 이름 : admin, 암호 : admin
 		urepository.save(new User("admin", "$2a$10$iGL2gRpth0NDmWK5ddOO0uYABCxqAwyty3q5yBXwVK4bG2G0ji26O", "ADMIN"));
 	

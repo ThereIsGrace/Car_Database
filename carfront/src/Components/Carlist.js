@@ -120,6 +120,7 @@ function Carlist() {
         <AddCar addCar={addCar} />
       </Stack>
       <div style={{ height: 500, width: "100%" }}>
+        <div style={{ width: '1200px', margin: 'auto'}}>
         <DataGrid
           rows={cars}
           columns={columns}
@@ -133,6 +134,9 @@ function Carlist() {
           onClose={() => setOpen(false)}
           message="Car deleted"
         />
+
+        </div>
+
       </div>
     </>
   );
