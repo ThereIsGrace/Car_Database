@@ -1,0 +1,25 @@
+server:
+  port: 8091   
+spring:
+  datasource:
+    max-active: 10
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/cardb
+    username: root
+    password: 12345
+    hikari:
+      maximum-pool-size: 8
+
+  jpa:  
+    database: mysql
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    hibernate:  
+      ddl-auto: create 
+      format_sql: true
+    show-sql: true  
+    properties:  
+      hibernate:  
+        
+  data:
+    rest:
+      base-path: /api
